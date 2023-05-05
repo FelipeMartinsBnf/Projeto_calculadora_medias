@@ -51,7 +51,7 @@ function AttTabela(){
 function AttMediaFinal(){
     const mediaFinal = CalculoMediaFinal();
 
-    document.getElementById('media-final').innerHTML = mediaFinal;
+    document.getElementById('media-final').innerHTML = mediaFinal.toFixed(2);
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spamAprovado : spamReprovado;
 
     }
